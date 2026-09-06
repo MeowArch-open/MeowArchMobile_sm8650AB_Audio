@@ -1,0 +1,22 @@
+[Unit]
+Description=zorn: create the ADSP's audiopd static protection domain (fastrpc)
+Documentation=drivers/misc/fastrpc.c fastrpc_init_create_static_process()
+# zorn's APM -- the AudioReach graph service every PCM goes through -- runs inside
+# the ADSP's "audiopd" protection domain, and nothing in mainline ever creates it:
+# the ioctl exists (FASTRPC_IOCTL_INIT_CREATE_STATIC) but calling it is adsprpcd's
+# job on Android. Without this, PRM answers (it lives in the ADSP root PD) while
+# every APM command times out and every PCM fails with -EIO.
+#
+# The PD lives exactly as long as the fd, so this stays running.
+After=local-fs.target
+Before=sddm.service
+
+[Service]
+ExecStart=/usr/local/sbin/fastrpc-audiopd 0x300000
+Restart=always
+RestartSec=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+[Unit]
+Description=zorn: start ADSP so the Type-C port gets VBUS (USB host power)
+After=systemd-remount-fs.service local-fs.target
+Before=getty.target getty@tty1.service multi-user.target
+DefaultDependencies=no
+Requires=local-fs.target
+Conflicts=shutdown.target
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/sbin/zorn-rproc-start.sh adsp
+StandardOutput=journal
+StandardError=journal
+TimeoutStartSec=90
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3 @@
+ gpio70  : out high func0 2mA pull down
+ gpio85  : out low  func0 6mA no pull
+ gpio111 : out low  func0 6mA no pull

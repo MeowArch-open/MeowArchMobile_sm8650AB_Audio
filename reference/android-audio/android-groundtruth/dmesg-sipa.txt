@@ -1,0 +1,163 @@
+[    2.222167] [ info] sipa_tuning_if_init: run
+[    2.222420] [ info] sipa_tuning_if_init: success
+[    8.376231] [ info][sipa_driver] sipa_pa_init: si_pa driver version : 3.1.11 
+[    8.376582] [ info][sipa_driver] sipa_probe: probe 
+[    8.376584] [debug][sipa_driver] create_sipa_dev: add si_pa dev : sipa-spk.0, index = 0 
+[    8.376585] [ info][sipa_driver] get_chip_type: chip : sia9187 
+[    8.376586] [ info][sipa_driver] get_chip_type: chip_type = 19
+[    8.376590] [ warn] sipa_property_init: No IRQ GPIO provided !
+[    8.376591] [  info][sipa_driver] sipa_property_init: spksw_gpio = 371 
+[    8.376699] [ info][sipa_driver] sipa_probe: finish, channel:0
+[    8.376806] [ info][sipa_driver] sipa_probe: probe 
+[    8.376809] [debug][sipa_driver] create_sipa_dev: add si_pa dev : sipa-spk.1, index = 1 
+[    8.376810] [ info][sipa_driver] get_chip_type: chip : sia9187 
+[    8.376812] [ info][sipa_driver] get_chip_type: chip_type = 19
+[    8.376816] [ warn] sipa_property_init: No IRQ GPIO provided !
+[    8.376817] [  err][sipa_driver] sipa_property_init: spksw_gpio < 0 !!! 
+[    8.376820] [  info][sipa_driver] sipa_property_init: spksw_gpio = -2 
+[    8.376938] [ info][sipa_driver] sipa_probe: finish, channel:1
+[    8.377304] [ info][sipa_driver] sipa_i2c_probe: i2c addr = 0x6c 
+[    8.377442] [ info][sipa_driver] sipa_i2c_probe: addr_offset default value!!!
+[    8.377750] [ info][sipa_driver] distinguish_chip_type: sipa device is available, chip_type = 19 .
+[    8.389374] set_smartpa_type find: sia91xx 
+[    8.389375] set_smartpa_type smartpa_type: sia91xx 
+[    8.389387] [info][sipa_i2c_probe] snd_soc_register_codec ret = 0 !
+[    8.389388] sipa 9-006c: set_smartpa_codec smartpa_dails name:sipa.9-006c  dai_name:sia91xx-aif-9-6c 
+[    8.389392] [ info][sipa_driver] sipa_i2c_probe: finish i2c addr = 0x6c, name:sipa-spk.0, channel:0
+[    8.389438] [ info][sipa_driver] sipa_i2c_probe: i2c addr = 0x6d 
+[    8.389439] check_smartpa_type smartpa_type: sia91xx 
+[    8.389504] [ info][sipa_driver] sipa_i2c_probe: addr_offset default value!!!
+[    8.389767] [ info][sipa_driver] distinguish_chip_type: sipa device is available, chip_type = 19 .
+[    8.402034] set_smartpa_type find: sia91xx 
+[    8.402035] set_smartpa_type smartpa_type: sia91xx 
+[    8.402038] [info][sipa_i2c_probe] snd_soc_register_codec ret = 0 !
+[    8.402039] sipa 9-006d: set_smartpa_codec smartpa_dails name:sipa.9-006d  dai_name:sia91xx-aif-9-6d 
+[    8.402042] [ info][sipa_driver] sipa_i2c_probe: finish i2c addr = 0x6d, name:sipa-spk.1, channel:1
+[   10.393154] [debug][sipa_param ] sipa_fw_load_work_delay: enter load
+[   10.393183] sipa soc:si_pa_L: loading /vendor/firmware_mnt/image/sipa.bin failed with error -13
+[   10.393188] sipa soc:si_pa_L: loading /vendor/firmware_mnt/image/kiwi/sipa.bin failed with error -13
+[   10.393194] sipa soc:si_pa_L: Direct firmware load for sipa.bin failed with error -2
+[   10.393196] sipa soc:si_pa_L: Falling back to sysfs fallback for: sipa.bin
+[   10.394572] ueventd: firmware: loading 'sipa.bin' for '/devices/platform/soc/soc:si_pa_L/firmware/sipa.bin'
+[   10.394847] ueventd: found /odm/firmware/sipa.bin for /devices/platform/soc/soc:si_pa_L/firmware/sipa.bin
+[   10.395015] ueventd: loading /devices/platform/soc/soc:si_pa_L/firmware/sipa.bin took 0ms
+[   10.395133] [debug][sipa_driver] sipa_suspend: running channel:0
+[   10.395683] [ info][sipa_regmap] sipa_regmap_get_chip_en: addr:0x1 val:0x40a0 mask:f  fw_val:5  
+[   10.395685] [ info][sipa_driver] sipa_pending_actions: sipa 0 driver init done 
+[   10.395686] [debug][sipa_param ] sipa_fw_load_work_delay: out load
+[   10.425162] [debug][sipa_param ] sipa_fw_load_work_delay: enter load
+[   10.425167] [debug][sipa_driver] sipa_suspend: running channel:1
+[   10.425496] [ info][sipa_regmap] sipa_regmap_get_chip_en: addr:0x1 val:0x40a0 mask:f  fw_val:5  
+[   10.425498] [ info][sipa_driver] sipa_pending_actions: sipa 1 driver init done 
+[   10.425500] [debug][sipa_param ] sipa_fw_load_work_delay: out load
+[   11.729680] smartpa_dai_link_select dailink:TDM-LPAIF-RX-SECONDARY codec_name: sipa.9-006c codec_dai: sia91xx-aif-9-6c 
+[   11.729687] smartpa_dai_link_select dailink:TDM-LPAIF-TX-SECONDARY codec_name: sipa.9-006c codec_dai: sia91xx-aif-9-6c 
+[   11.779307] [debug][sipa_driver] sipa_component_probe: running 
+[   11.779313] [  err][sipa_91xx] sia91xx_register_interrupt: irq pin error !!! 
+[   11.779377] [debug][sipa_driver] sipa_component_probe: running 
+[   11.779379] [  err][sipa_91xx] sia91xx_register_interrupt: irq pin error !!! 
+[   14.163357] [debug][sipa_driver] sipa_power_get: ucontrol = 0, channel_num = 0 
+[   14.163365] [debug][sipa_driver] sipa_audio_scene_get: ucontrol = 0, channle = 0 
+[   14.163369] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 0 
+[   14.163372] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 0 
+[   14.163375] [debug][sipa_driver] sipa_mute_get: ucontrol = 0x0, channle = 0 
+[   14.163387] sipa 9-006c: spksw level cached = 0, actual = 0
+[   14.163392] [debug][sipa_driver] sipa_power_get: ucontrol = 0, channel_num = 1 
+[   14.163398] [debug][sipa_driver] sipa_audio_scene_get: ucontrol = 0, channle = 1 
+[   14.163402] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 1 
+[   14.163405] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 1 
+[   14.163407] [debug][sipa_driver] sipa_mute_get: ucontrol = 0x0, channle = 1 
+[   14.163412] sipa 9-006d: spksw level cached = 0, actual = 0
+[   14.173603] [debug][sipa_driver] sipa_mute_set: ucontrol = 1, channel_num = 0 
+[   14.173610] sipa 9-006c: spksw = 1
+[   14.173621] [debug][sipa_driver] sipa_mute_set: ucontrol = 1, channel_num = 1 
+[   36.777087] [debug][sipa_driver] sipa_mute_set: ucontrol = 0, channel_num = 0 
+[   36.777094] [debug][sipa_driver] sipa_mute_set: ucontrol = 0, channel_num = 1 
+[   36.790793] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6c,sia91xx-aif-9-6c mute = 0 stream = 1
+[   36.790801] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6d,sia91xx-aif-9-6d mute = 0 stream = 1
+[   36.791630] [debug][sipa_91xx] sia91xx_startup: dai:sia91xx-aif-9-6c, substream:subdevice #0, startup, stream = 0 
+[   36.791845] [debug][sipa_regmap] sipa_regmap_defaults: running, chip_type = 19, channel_num = 0 
+[   36.798899] [ info][sipa_regmap] sipa_regmap_proc_1_reg: addr:0x8, val:0x1
+[   36.800792] [debug][sipa_91xx] sia91xx_smartpa_start: device start success! 
+[   36.804167] [debug][sipa_91xx] sia91xx_startup: dai:sia91xx-aif-9-6d, substream:subdevice #0, startup, stream = 0 
+[   36.804178] [debug][sipa_regmap] sipa_regmap_defaults: running, chip_type = 19, channel_num = 1 
+[   36.810314] [ info][sipa_regmap] sipa_regmap_proc_1_reg: addr:0x8, val:0x1
+[   36.811618] [debug][sipa_91xx] sia91xx_smartpa_start: device start success! 
+[   36.815111] [ info][sipa_91xx] sia91xx_hw_params: dai:sia91xx-aif-9-6c subdevice #0 i2s rate: 48000 !!! 
+[   36.815115] [ info][sipa_91xx] sia91xx_hw_params: i2s channel: 2 !!! 
+[   36.815117] [ info][sipa_91xx] sia91xx_hw_params: i2s width: 32 !!! 
+[   36.815118] [debug][sipa_91xx] sia91xx_hw_params: stream = 0, requested rate = 48000, sample size = 32,physical size = 32, channel num = 2
+[   36.815123] [ info][sipa_91xx] sia91xx_hw_params: dai:sia91xx-aif-9-6d subdevice #0 i2s rate: 48000 !!! 
+[   36.815125] [ info][sipa_91xx] sia91xx_hw_params: i2s channel: 2 !!! 
+[   36.815127] [ info][sipa_91xx] sia91xx_hw_params: i2s width: 32 !!! 
+[   36.815128] [debug][sipa_91xx] sia91xx_hw_params: stream = 0, requested rate = 48000, sample size = 32,physical size = 32, channel num = 2
+[   36.852807] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6c,sia91xx-aif-9-6c mute = 0 stream = 0
+[   36.852816] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6d,sia91xx-aif-9-6d mute = 0 stream = 0
+[   37.062001] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 0 
+[   37.063247] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 0 
+[   37.065846] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 1 
+[   37.066973] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 1 
+[   39.433905] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6c,sia91xx-aif-9-6c mute = 1 stream = 1
+[   39.433914] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6d,sia91xx-aif-9-6d mute = 1 stream = 1
+[   39.441434] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6c,sia91xx-aif-9-6c mute = 1 stream = 0
+[   39.444076] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6d,sia91xx-aif-9-6d mute = 1 stream = 0
+[   39.449130] [debug][sipa_driver] sipa_mute_set: ucontrol = 1, channel_num = 1 
+[   39.449239] [debug][sipa_driver] sipa_mute_set: ucontrol = 1, channel_num = 0 
+[   49.968746] [debug][sipa_driver] sipa_mute_set: ucontrol = 0, channel_num = 0 
+[   49.968754] [debug][sipa_driver] sipa_mute_set: ucontrol = 0, channel_num = 1 
+[   49.981658] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6c,sia91xx-aif-9-6c mute = 0 stream = 1
+[   49.981666] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6d,sia91xx-aif-9-6d mute = 0 stream = 1
+[   49.982788] [debug][sipa_91xx] sia91xx_startup: dai:sia91xx-aif-9-6c, substream:subdevice #0, startup, stream = 0 
+[   49.982799] [debug][sipa_regmap] sipa_regmap_defaults: running, chip_type = 19, channel_num = 0 
+[   49.989398] [ info][sipa_regmap] sipa_regmap_proc_1_reg: addr:0x8, val:0x0
+[   49.990786] [debug][sipa_91xx] sia91xx_smartpa_start: device start success! 
+[   49.993998] [debug][sipa_91xx] sia91xx_startup: dai:sia91xx-aif-9-6d, substream:subdevice #0, startup, stream = 0 
+[   49.994006] [debug][sipa_regmap] sipa_regmap_defaults: running, chip_type = 19, channel_num = 1 
+[   50.000213] [ info][sipa_regmap] sipa_regmap_proc_1_reg: addr:0x8, val:0x0
+[   50.001631] [debug][sipa_91xx] sia91xx_smartpa_start: device start success! 
+[   50.004775] [ info][sipa_91xx] sia91xx_hw_params: dai:sia91xx-aif-9-6c subdevice #0 i2s rate: 48000 !!! 
+[   50.004778] [ info][sipa_91xx] sia91xx_hw_params: i2s channel: 2 !!! 
+[   50.004779] [ info][sipa_91xx] sia91xx_hw_params: i2s width: 32 !!! 
+[   50.004781] [debug][sipa_91xx] sia91xx_hw_params: stream = 0, requested rate = 48000, sample size = 32,physical size = 32, channel num = 2
+[   50.004785] [ info][sipa_91xx] sia91xx_hw_params: dai:sia91xx-aif-9-6d subdevice #0 i2s rate: 48000 !!! 
+[   50.004787] [ info][sipa_91xx] sia91xx_hw_params: i2s channel: 2 !!! 
+[   50.004788] [ info][sipa_91xx] sia91xx_hw_params: i2s width: 32 !!! 
+[   50.004789] [debug][sipa_91xx] sia91xx_hw_params: stream = 0, requested rate = 48000, sample size = 32,physical size = 32, channel num = 2
+[   50.034830] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6c,sia91xx-aif-9-6c mute = 0 stream = 0
+[   50.034846] [debug][sipa_91xx] sia91xx_mute: dai:sia91xx-aif-9-6d,sia91xx-aif-9-6d mute = 0 stream = 0
+[   50.239647] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 0 
+[   50.240582] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 0 
+[   50.242418] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 1 
+[   50.243639] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 1 
+[  698.600560] [debug][sipa_driver] sipa_power_get: ucontrol = 1, channel_num = 0 
+[  698.600571] [debug][sipa_driver] sipa_audio_scene_get: ucontrol = 0, channle = 0 
+[  698.600592] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 0 
+[  698.600597] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 0 
+[  698.600601] [debug][sipa_driver] sipa_mute_get: ucontrol = 0x0, channle = 0 
+[  698.601233] [debug][sipa_driver] sipa_reg_get: channle = 0 size:4, [0, 0] 0x0, 0x0, 0xcd, 0x2, addr:0x0 = 0xcd02
+[  698.601236] [debug][sipa_driver] sipa_reg_get: channle = 0 size:4
+[  698.601256] sipa 9-006c: spksw level cached = 0, actual = 1
+[  698.601264] [debug][sipa_driver] sipa_power_get: ucontrol = 1, channel_num = 1 
+[  698.601275] [debug][sipa_driver] sipa_audio_scene_get: ucontrol = 0, channle = 1 
+[  698.601283] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 1 
+[  698.601287] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 1 
+[  698.601292] [debug][sipa_driver] sipa_mute_get: ucontrol = 0x0, channle = 1 
+[  698.601730] [debug][sipa_driver] sipa_reg_get: channle = 1 size:4, [0, 0] 0x0, 0x0, 0xcd, 0x2, addr:0x0 = 0xcd02
+[  698.601734] [debug][sipa_driver] sipa_reg_get: channle = 1 size:4
+[  698.601757] sipa 9-006d: spksw level cached = 0, actual = 0
+[  818.260830] [debug][sipa_driver] sipa_power_get: ucontrol = 1, channel_num = 0 
+[  818.260852] [debug][sipa_driver] sipa_audio_scene_get: ucontrol = 0, channle = 0 
+[  818.260868] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 0 
+[  818.260877] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 0 
+[  818.260886] [debug][sipa_driver] sipa_mute_get: ucontrol = 0x0, channle = 0 
+[  818.261504] [debug][sipa_driver] sipa_reg_get: channle = 0 size:4, [0, 0] 0x0, 0x0, 0x5, 0x2, addr:0x0 = 0x502
+[  818.261511] [debug][sipa_driver] sipa_reg_get: channle = 0 size:4
+[  818.261797] sipa 9-006c: spksw level cached = 1, actual = 1
+[  818.261828] [debug][sipa_driver] sipa_power_get: ucontrol = 1, channel_num = 1 
+[  818.261846] [debug][sipa_driver] sipa_audio_scene_get: ucontrol = 0, channle = 1 
+[  818.261860] [debug][sipa_driver] sipa_status_get: ucontrol = 0x0, channle = 1 
+[  818.261869] [debug][sipa_driver] sipa_chip_type_get: ucontrol = 0x19, channle = 1 
+[  818.261960] [debug][sipa_driver] sipa_mute_get: ucontrol = 0x0, channle = 1 
+[  818.262573] [debug][sipa_driver] sipa_reg_get: channle = 1 size:4, [0, 0] 0x0, 0x0, 0x5, 0x2, addr:0x0 = 0x502
+[  818.262579] [debug][sipa_driver] sipa_reg_get: channle = 1 size:4
+[  818.262610] sipa 9-006d: spksw level cached = 0, actual = 0
